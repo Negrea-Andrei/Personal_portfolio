@@ -11,10 +11,7 @@ html {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background-image: url("./Profile1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(129deg, rgba(147,253,232,0.5998774509803921) 34%, rgba(147,165,253,1) 70%);
     display: flex;
     flex-direction: column;
 }
@@ -27,7 +24,8 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: aqua;
+    background-color: color-mix(in srgb, white, transparent 80%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-links, .sections-links {
