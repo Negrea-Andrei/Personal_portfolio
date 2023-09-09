@@ -18,6 +18,7 @@ html {
 
 .header-container {
     display: flex;
+    height: 10vh;
     flex-direction: row;
     justify-content: space-around;
     background-color: color-mix(in srgb, white, transparent 80%);
@@ -41,7 +42,8 @@ html {
 .contact-links,
 .sections-links {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
