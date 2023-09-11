@@ -11,7 +11,7 @@ html {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(129deg, rgba(147,253,232,1) 38%, rgba(147,165,253,1) 38%);
+    background: linear-gradient(135deg, rgba(147,253,232,1) 38%, rgba(69,101,255,1) 38%);
     display: flex;
     flex-direction: column;
 }
