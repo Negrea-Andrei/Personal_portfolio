@@ -19,8 +19,10 @@ html {
 .header-container {
     display: flex;
     height: 10vh;
+    min-height: 80px;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: color-mix(in srgb, white, transparent 80%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -45,14 +47,14 @@ html {
     font-size: 1.7rem;
     font-weight: 700;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     list-style: none;
 }
 
 .contact-links {
-    width: 15vw;
+    width: 10vw;
 }
 
 .sections-links {
@@ -65,8 +67,9 @@ html {
     position: relative;
 }
 
-.contact-links a img {
-    height: 100%;
+.contact-links li a svg {
+    height: 50px;
+    min-height: 50px;
     max-width: 50%; 
     min-width: 25px;
 }
