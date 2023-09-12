@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Pixel;
+    src: url(./PublicPixel-eZPz6.ttf);
+}
+
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -38,13 +43,16 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 300%;
-    font-weight: bolder;
 }
 
 .name {
-    width: auto;
+    width: 250%;
     min-width: 450px;
+    height: 300%;
+    min-height: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Pixel;
     border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
     border-radius: 20px;
     display: flex;
@@ -53,20 +61,27 @@ html {
     transition: background-color ease-in 0.5s;
 }
 
-@media screen and (max-width: 900px) {
-    .name-container {
-        font-size: 200%;        
-    }
+@media screen and (max-width: 1190px) {
     .name {
+        font-size: 1.5rem;
         min-width: 300px;
         border-radius: 15px;
     }
-    .nav-links-container, .nav-page-container {
+}
+
+@media screen and (max-width: 900px) {
+    .name {
+        font-size: 1rem;
+    }
+
+    .nav-links-container,
+    .nav-page-container {
         display: none;
     }
-    .header-container{
+
+    .header-container {
         justify-content: center;
-    }    
+    }
 }
 
 .name:hover {
