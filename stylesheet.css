@@ -35,7 +35,8 @@ html {
 .nav-page-container {
     min-width: 250px;
     width: 5%;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
+    font-family: Pixel, sans-serif;
 }
 
 .name-container {
@@ -127,8 +128,19 @@ html {
     cursor: pointer;
 }
 
-.contact-links a::before,
-.sections-links a::before {
+.contact-links a::before {  
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 1s ease-out;  
+    bottom: -4px;
+}
+
+.sections-links a::before {    
     content: "";
     position: absolute;
     bottom: 0;
@@ -136,7 +148,8 @@ html {
     width: 0;
     height: 2px;
     background-color: #000;
-    transition: width 1s ease-out;
+    transition: width 1s ease-out;  
+    bottom: -4px;
 }
 
 .contact-links a:hover::before,
