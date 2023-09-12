@@ -58,7 +58,8 @@ html {
         font-size: 200%;        
     }
     .name {
-        min-width: 280px;
+        min-width: 300px;
+        border-radius: 15px;
     }
     .nav-links-container, .nav-page-container {
         display: none;
