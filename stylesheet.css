@@ -11,7 +11,7 @@ html {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, rgba(147,253,232,1) 38%, rgba(69,101,255,1) 38%);
+    background: linear-gradient(135deg, rgba(147, 253, 232, 1) 38%, rgba(69, 101, 255, 1) 38%);
     display: flex;
     flex-direction: column;
 }
@@ -21,30 +21,61 @@ html {
     height: 10vh;
     min-height: 80px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: color-mix(in srgb, white, transparent 80%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.avatar-container {
-    flex: 2 1 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.nav-page-container {
+    min-width: 250px;
+    width: 5%;
+    font-size: 1.5rem;
 }
 
-.avatar {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    margin-right: 10vw;    
+.name-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.name {
+    width: auto;
+    min-width: 450px;
+    border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color ease-in 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+    .name-container {
+        font-size: 200%;        
+    }
+    .name {
+        min-width: 280px;
+    }
+    .nav-links-container, .nav-page-container {
+        display: none;
+    }
+    .header-container{
+        justify-content: center;
+    }    
+}
+
+.name:hover {
+    background-color: aliceblue;
+    cursor: pointer;
 }
 
 .contact-links,
 .sections-links {
     display: flex;
-    font-size: 1.7rem;
     font-weight: 700;
     flex-direction: row;
     justify-content: space-around;
@@ -55,10 +86,6 @@ html {
 
 .contact-links {
     width: 10vw;
-}
-
-.sections-links {
-    width: 30vw;
 }
 
 .sections-links a:visited {
@@ -75,7 +102,7 @@ html {
 .contact-links li a svg {
     height: 50px;
     min-height: 50px;
-    max-width: 50%; 
+    max-width: 50%;
     min-width: 25px;
 }
 
@@ -98,5 +125,5 @@ html {
 
 .contact-links a:hover::before,
 .sections-links a:hover::before {
-    width: 100%;    
+    width: 100%;
 }
