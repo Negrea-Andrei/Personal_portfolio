@@ -141,9 +141,9 @@ html {
     height: 70%;
     border: #000 solid 2px;
     box-shadow: 
-    0 0 5px 3px white,
-    0 0 5px 6px grey,
-    0 0 0 11px black;
+    0 0 5px 2px white,
+    0 0 5px 4px grey,
+    0 0 0 9px black;
     border-radius: 3px;
 }
 
