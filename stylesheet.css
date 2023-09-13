@@ -136,9 +136,15 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 70%;
-    height: 80%;
+    height: 70%;
     border: #000 solid 2px;
+    box-shadow: 
+    0 0 5px 3px white,
+    0 0 5px 6px grey,
+    0 0 0 11px black;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 1190px) {
@@ -146,6 +152,10 @@ html {
         font-size: 1.5rem;
         min-width: 300px;
         border-radius: 15px;
+    }    
+
+    .introduction svg {
+        width: 60%;
     }
 }
 
@@ -162,4 +172,11 @@ html {
     .header-container {
         justify-content: center;
     }
+}
+
+@media screen and (max-height: 800px) {
+    .introduction svg {
+        height: 60%;
+    }
+    
 }
