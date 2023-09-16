@@ -1,6 +1,6 @@
-import './stylesheet.css'
-import printMe from './test.js';
+import "./stylesheet.css";
+import printMe from "./test.js";
 
-console.log('hello!')
+console.log("hello!");
 
-printMe()
+printMe();

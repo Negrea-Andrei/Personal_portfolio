@@ -1,218 +1,260 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: Pixel;
-    src: url(./assets/fonts/PublicPixel-eZPz6.ttf);
+  font-family: Pixel;
+  src: url(./assets/fonts/PublicPixel-eZPz6.ttf);
 }
 
 .hero-section {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(154deg, rgb(147, 253, 232) 50%, rgb(69, 101, 255) 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    154deg,
+    rgb(147, 253, 232) 50%,
+    rgb(69, 101, 255) 50%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description-container {
-    width: 100%;
-    height: 100vh;
-    background: rgb(69, 101, 255);
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(69, 101, 255);
+  position: relative;
 }
 
 .description {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description > * {
+  width: 40%;
+  height: 80%;
+  background-color: color-mix(in srgb, transparent 50%, rgb(30, 67, 255) 50%);
+  z-index: 1;
+  border-radius: 15px;  
+  border: steelblue 3px solid;
+}
+
+.description > .my-photo {
+  width: 20%;
+  border: none;
+  background-image: url(./assets/photos/feet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-description svg {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
 }
 
 .header-container {
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    min-height: 80px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: color-mix(in srgb, white, transparent 80%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 0 0 40px 0;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  min-height: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: color-mix(in srgb, white, transparent 80%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 0 40px 0;
 }
 
 .nav-page-container {
-    min-width: 250px;
-    width: 5%;
-    font-size: 0.7rem;
-    font-family: Pixel, sans-serif;
+  min-width: 250px;
+  width: 5%;
+  font-size: 0.7rem;
+  font-family: Pixel, sans-serif;
 }
 
 .name-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
-    width: 250%;
-    min-width: 450px;
-    height: 300%;
-    min-height: 50px;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: Pixel;
-    border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color ease-in 0.5s;
+  width: 250%;
+  min-width: 450px;
+  height: 300%;
+  min-height: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Pixel;
+  border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease-in 0.5s;
 }
 
 .name:hover {
-    background-color: aliceblue;
-    cursor: pointer;
+  background-color: aliceblue;
+  cursor: pointer;
 }
 
 .contact-links,
 .sections-links {
-    display: flex;
-    font-weight: 700;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    list-style: none;
+  display: flex;
+  font-weight: 700;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
 }
 
 .contact-links {
-    width: 10vw;
+  width: 10vw;
 }
 
 .sections-links a:visited {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .contact-links a,
 .sections-links a {
-    text-decoration: none;
-    position: relative;
+  text-decoration: none;
+  position: relative;
 }
 
 .contact-links li a svg {
-    height: 50px;
-    min-height: 50px;
-    max-width: 50%;
-    min-width: 25px;
+  height: 50px;
+  min-height: 50px;
+  max-width: 50%;
+  min-width: 25px;
 }
 
 .contact-links a:hover,
 .sections-links a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .contact-links a::before,
 .sections-links a::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #000;
-    transition: width 1s ease-out;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 1s ease-out;
 }
 
 .contact-links a:hover::before,
 .sections-links a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: 70%;
-    border: #000 solid 2px;
-    box-shadow:
-        0 0 5px 2px white,
-        0 0 5px 4px grey,
-        0 0 0 9px black;
-    border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  border: #000 solid 2px;
+  box-shadow: 0 0 5px 2px white, 0 0 5px 4px grey, 0 0 0 9px black;
+  border-radius: 3px;
 }
 
-
 @media screen and (max-width: 1190px) {
-    .name {
-        font-size: 1.5rem;
-        min-width: 300px;
-        border-radius: 15px;
-    }
+  .name {
+    font-size: 1.5rem;
+    min-width: 300px;
+    border-radius: 15px;
+  }
 
-    .introduction svg {
-        width: 60%;
-    }
+  .introduction svg {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .name {
-        font-size: 1rem;
-    }
+  .name {
+    font-size: 1rem;
+  }
 
-    .nav-links-container,
-    .nav-page-container {
-        display: none;
-    }
+  .nav-links-container,
+  .nav-page-container {
+    display: none;
+  }
 
-    .header-container {
-        justify-content: center;
-    }
+  .header-container {
+    justify-content: center;
+  }
+
+  .description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .description > * {
+    width: 80%;
+    height: 60%;
+  }
+  
+  .description > .my-photo {    
+    width: 80%;
+    height: 30%;
+    border: none;
+    background-image: url(./assets/photos/landscape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-height: 800px) {
-    .introduction svg {
-        height: 60%;
-    }
-
+  .introduction svg {
+    height: 60%;
+  }
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(241, 241, 241);    
+  background: rgb(241, 241, 241);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(173, 173, 173);    
-    border-radius: 13px;
+  background-color: rgb(173, 173, 173);
+  border-radius: 13px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(148, 148, 148);
+  background-color: rgb(148, 148, 148);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: rgb(121, 121, 121);
+  background-color: rgb(121, 121, 121);
 }
