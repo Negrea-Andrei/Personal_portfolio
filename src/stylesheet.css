@@ -43,7 +43,7 @@ html {
 }
 
 .description > * {
-  width: 40%;
+  width: 60%;
   height: 80%;
   background-color: color-mix(in srgb, transparent 50%, rgb(30, 67, 255) 50%);
   z-index: 1;
@@ -52,9 +52,9 @@ html {
 }
 
 .description > .my-photo {
-  width: 20%;
+  width: 30%;
   border: none;
-  background-image: url(./assets/photos/feet.jpg);
+  background-image: url(./assets/photos/portrait.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,8 +176,7 @@ html {
   justify-content: center;
   width: 70%;
   height: 70%;
-  border: #000 solid 2px;
-  box-shadow: 0 0 5px 2px white, 0 0 5px 4px grey, 0 0 0 9px black;
+  box-shadow: 0 0 5px 2px rgb(163, 209, 255), 0 0 5px 4px rgb(108, 177, 244), 0 0 0 9px rgb(55, 155, 255);
   border-radius: 3px;
 }
 
@@ -217,12 +216,12 @@ html {
   }
 
   .description > * {
-    width: 80%;
+    width: 85%;
     height: 60%;
   }
   
   .description > .my-photo {    
-    width: 80%;
+    width: 85%;
     height: 30%;
     border: none;
     background-image: url(./assets/photos/landscape.jpg);
