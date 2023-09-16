@@ -16,20 +16,29 @@ html {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(154deg, rgba(147, 253, 232, 1) 50%, rgb(69, 101, 255) 50%);
+    background: linear-gradient(154deg, rgb(147, 253, 232) 50%, rgb(69, 101, 255) 50%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.description {
+.description-container {
     width: 100%;
     height: 100vh;
     background: rgb(69, 101, 255);
     position: relative;
 }
 
-.description svg {
+.description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-description svg {
     position: absolute;
     bottom: 0;
 }
