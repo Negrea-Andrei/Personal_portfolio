@@ -1,7 +1,7 @@
 {
   "name": "personal_portfolio",
   "version": "1.0.0",
-  "description": "This will be my personal portofoloi",
+  "description": "This will be my personal portfolio",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

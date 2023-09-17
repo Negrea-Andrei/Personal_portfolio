@@ -1,2 +1,2 @@
 # Personal_portfolio
-This will be my personal portofoloi
+This will be my personal portfolio
