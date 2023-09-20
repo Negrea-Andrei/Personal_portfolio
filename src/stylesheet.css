@@ -230,7 +230,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  animation: wordSlider 7s ease-out infinite alternate;
+  animation: wordSlider 5s ease-out infinite alternate;
 }
 
 .skills {
@@ -349,6 +349,11 @@ html {
 }
 
 .projects {
+  background-image: url(./assets/svg/Monster\ 404\ Error-rafiki.svg);
+  background-color: color-mix(in srgb, transparent 70%, rgb(108, 177, 244) 60%) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 80%;
   height: 75%;
   display: flex;
@@ -471,7 +476,7 @@ html {
 
   .introduction svg {
     height: 60%;
-  }
+  }  
 
   .about_me_text, .skills ul{
     font-size: 0.7rem;
