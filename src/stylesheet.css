@@ -74,11 +74,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color ease-in 0.5s;
+  transition: background-color ease-in 0.3s;
+  text-decoration: none;
+}
+
+.name:visited {
+  color: black;
 }
 
 .name:hover {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -473,11 +478,19 @@ html {
   min-width: 70px;
   height: 100%;
   margin: auto;
+  transition: ease-in background-color 0.3s;
 }
+
+.social_links a:hover {
+  background-color: rgb(43, 235, 196);
+} 
 
 footer {
   height: 15vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(90, 106, 189);
   color: aliceblue;
 }
@@ -569,6 +582,10 @@ footer {
     font-size: 1.5rem;
     margin: 15px 5px;
   }
+  
+  .skills li:last-child {
+    font-size: 16px;
+  }
 
   .projects_container_title h1 {
     width: 90%;
@@ -622,6 +639,10 @@ footer {
     width: 70%;
     row-gap: 7px;
     column-gap: 9px;
+  }
+
+  .skills li:last-child {
+    font-size: 10px;
   }
 
   .projects_container_title h1 {
