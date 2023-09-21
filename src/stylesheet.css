@@ -51,7 +51,7 @@ html {
   min-width: 250px;
   width: 5%;
   font-size: 0.7rem;
-  font-family: Pixel, sans-serif;
+  font-family: Pixel,Arial, Helvetica, sans-serif;
 }
 
 .name-container {
@@ -68,7 +68,7 @@ html {
   min-height: 50px;
   font-size: 2rem;
   font-weight: 600;
-  font-family: Pixel;
+  font-family: Pixel,Arial, Helvetica, sans-serif;
   border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
   border-radius: 20px;
   display: flex;
@@ -147,7 +147,7 @@ html {
   box-shadow: 0 0 5px 2px rgb(163, 209, 255), 0 0 5px 4px rgb(108, 177, 244),
     0 0 0 9px rgb(55, 155, 255);
   border-radius: 3px;
-  background: linear-gradient(154.3deg, rgb(69, 101, 255) 50%, rgba(147,253,232,1) 50%);
+  background: linear-gradient(154.3deg, rgb(69, 101, 255) 50%, #93fde8 50%);
 }
 
 .introduction h1 {
@@ -239,7 +239,7 @@ html {
 }
 
 .skills p {
-  font-family: Pixel;
+  font-family: Pixel,Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
 
@@ -249,7 +249,7 @@ html {
   text-align: left;
 }
 
-.skills ul{
+.skills ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -267,7 +267,8 @@ html {
   transition: ease-in 0.5s background-color, ease-in 0.3s color;
 }
 
-.skills li:hover, .skills li:focus {
+.skills li:hover,
+.skills li:focus {
   background-color: rgb(34, 211, 255);
   color: black;
 }
@@ -287,7 +288,7 @@ html {
   }
 }
 
-.section-description svg {
+.section_description svg {
   position: absolute;
   bottom: 0;
   z-index: 0;
@@ -302,7 +303,11 @@ html {
 .section_projects {
   width: 100%;
   height: 200vh;
-  background: linear-gradient(0deg, rgba(69,101,255,1) 96%, rgba(147,253,232,1) 98%);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 101, 255, 1) 96%,
+    rgba(147, 253, 232, 1) 98%
+  );
 }
 
 .section_projects svg {
@@ -350,12 +355,12 @@ html {
 
 .projects {
   background-image: url(./assets/svg/Monster\ 404\ Error-rafiki.svg);
-  background-color: color-mix(in srgb, transparent 70%, rgb(108, 177, 244) 60%) ;
+  background-color: color-mix(in srgb, transparent 70%, rgb(108, 177, 244) 60%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
-  height: 75%;
+  height: 90%;
   display: flex;
   flex-direction: row;
 }
@@ -367,6 +372,114 @@ html {
 
 .projects div:hover {
   flex: 3;
+}
+
+.section_contacts {
+  height: 95vh;
+  font-family: Pixel,Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  -webkit-text-stroke: #000 1px;
+  align-items: center;
+  width: 100%;
+  background-color: #93fde8;
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      #4565ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #4565ff 87.5%,
+      #4565ff
+    ),
+    linear-gradient(
+      150deg,
+      #4565ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #4565ff 87.5%,
+      #4565ff
+    ),
+    linear-gradient(
+      30deg,
+      #4565ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #4565ff 87.5%,
+      #4565ff
+    ),
+    linear-gradient(
+      150deg,
+      #4565ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #4565ff 87.5%,
+      #4565ff
+    ),
+    linear-gradient(
+      60deg,
+      #4565ff77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #4565ff77 75%,
+      #4565ff77
+    ),
+    linear-gradient(
+      60deg,
+      #4565ff77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #4565ff77 75%,
+      #4565ff77
+    );
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.section_contacts  h1 {
+  text-decoration:underline 3px rgb(0, 0, 0); 
+  line-height: 4rem;
+  height: 40%;
+  color: #000;
+}
+
+.social_links-container {
+  width: 80%;
+  height: 60%;
+  background-color: color-mix(in srgb, transparent 60%, rgb(255, 255, 255) 50%);
+}
+
+.social_links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;  
+  height: 40%;
+  width: 100%;
+}
+
+.social_links a {
+  border-radius: 25px;
+  background-color: rgba(118, 255, 228, 0.747);
+  border: solid 2px rgb(90, 106, 189) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-width: 70px;
+  height: 100%;
+  margin: auto;
+}
+
+footer {
+  height: 15vh;
+  width: 100%;
+  background-color: rgb(90, 106, 189);
+  color: aliceblue;
 }
 
 @media screen and (max-width: 1190px) {
@@ -382,23 +495,28 @@ html {
 
   .about_me_title {
     font-size: 2.1rem;
-  }    
+  }
 
   .introduction h1 {
     display: flex;
     font-size: 2.4rem;
     text-align: center;
   }
-  
-  .skills ul{
+
+  .skills ul {
     font-size: 1.1rem;
-  } 
-  
-  
+  }
+
   .projects_container_title h1 {
-    width: 100%;    
+    width: 100%;
     font-size: 9rem;
   }
+
+  .section_contacts  h1 {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -451,7 +569,7 @@ html {
     font-size: 1.5rem;
     margin: 15px 5px;
   }
-  
+
   .projects_container_title h1 {
     width: 90%;
   }
@@ -461,6 +579,11 @@ html {
     height: 90%;
     display: flex;
     flex-direction: column;
+  }
+
+  .section_contacts  h1 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
   }
 }
 
@@ -476,22 +599,27 @@ html {
 
   .introduction svg {
     height: 60%;
-  }  
+  }
 
-  .about_me_text, .skills ul{
+  .about_me_text,
+  .skills ul {
     font-size: 0.7rem;
   }
 
   .section_projects {
-    background: linear-gradient(0deg, rgba(69,101,255,1) 98%, rgba(147,253,232,1) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(69, 101, 255, 1) 98%,
+      rgba(147, 253, 232, 1) 100%
+    );
   }
 
-  .skills{
+  .skills {
     font-size: 1rem;
   }
 
   .skills ul {
-    width: 70%;    
+    width: 70%;
     row-gap: 7px;
     column-gap: 9px;
   }
@@ -499,5 +627,19 @@ html {
   .projects_container_title h1 {
     width: 100%;
     font-size: 7.5rem;
+  }
+
+  .section_contacts  h1 {
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+
+  .social_links a {
+    width: 50px;
+    height: 50%;
+  }
+  
+  footer {
+    height: 10vh;
   }
 }
