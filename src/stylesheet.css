@@ -51,7 +51,7 @@ html {
   min-width: 250px;
   width: 5%;
   font-size: 0.7rem;
-  font-family: Pixel,Arial, Helvetica, sans-serif;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
 }
 
 .name-container {
@@ -68,7 +68,7 @@ html {
   min-height: 50px;
   font-size: 2rem;
   font-weight: 600;
-  font-family: Pixel,Arial, Helvetica, sans-serif;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
   border: color-mix(in srgb, transparent 30%, black 60%) solid 3px;
   border-radius: 20px;
   display: flex;
@@ -149,10 +149,15 @@ html {
   justify-content: center;
   width: 90%;
   height: 70%;
-  box-shadow: 0 0 5px 2px rgb(163, 209, 255), 0 0 5px 4px rgb(108, 177, 244),
-    0 0 0 9px rgb(55, 155, 255);
+  box-shadow: 6px 4px 5px 2px rgb(144, 156, 168),
+    6px 4px 5px 3px rgb(116, 118, 126), 6px 4px 15px 5px rgb(95, 98, 100);
   border-radius: 3px;
-  background: linear-gradient(154.3deg, rgb(69, 101, 255) 50%, #93fde8 50%);
+  background: rgb(69, 101, 255);
+  background: linear-gradient(
+    154.3deg,
+    rgba(69, 101, 255, 1) 40%,
+    rgba(147, 253, 232, 1) 70%
+  );
 }
 
 .introduction h1 {
@@ -203,6 +208,8 @@ html {
   width: 30%;
   border: none;
   background-image: url(./assets/photos/portrait.jpg);
+  background-color: rgba(192, 252, 240, 0.781);
+  background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,7 +251,7 @@ html {
 }
 
 .skills p {
-  font-family: Pixel,Arial, Helvetica, sans-serif;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
 
@@ -260,8 +267,8 @@ html {
   grid-template-rows: repeat(2, 1fr);
   column-gap: 40px;
   row-gap: 10px;
-  text-decoration: none;
-  font-size: x-large;
+  text-decoration: none;  
+  font-size: 1.2rem;
 }
 
 .skills ul li {
@@ -271,6 +278,7 @@ html {
   border-radius: 25px;
   transition: ease-in 0.5s background-color, ease-in 0.3s color;
 }
+
 
 .skills li:hover,
 .skills li:focus {
@@ -327,14 +335,7 @@ html {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background:
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#47d3ff 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#47d3ff 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#47d3ff 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#47d3ff 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
-      repeating-conic-gradient(#474bff 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
-      radial-gradient(#0000 66%,#47d3ff 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px
-      #474bff;
+  background-color: rgb(71, 75, 255);
 }
 
 .projects_container > div {
@@ -352,11 +353,19 @@ html {
 
 .projects_container_title h1 {
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-stroke: #000 2px;
-  margin-left: 5%;
+  margin-left: 2%;
   width: 40%;
   font-size: 11rem;
-  color: aliceblue;
+  background: rgb(147, 253, 232);
+  background: linear-gradient(
+    135deg,
+    rgba(147, 253, 232, 1) 22%,
+    rgba(111, 183, 243, 1) 42%,
+    rgba(69, 101, 255, 1) 83%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .projects_container_page {
@@ -390,7 +399,7 @@ html {
 
 .section_contacts {
   height: 95vh;
-  font-family: Pixel,Arial, Helvetica, sans-serif;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -398,18 +407,16 @@ html {
   -webkit-text-stroke: #000 1px;
   align-items: center;
   width: 100%;
-  background:
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#93fde8 68% 70%,#0000 72%) 100px 100px/calc(2*100px) calc(2*100px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#93fde8 68% 70%,#0000 72%) 100px 100px/calc(2*100px) calc(2*100px),
-      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#93fde8 68% 70%,#0000 72%) 0 0/calc(2*100px) calc(2*100px),
-      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#93fde8 68% 70%,#0000 72%) 0 0/calc(2*100px) calc(2*100px),
-      repeating-conic-gradient(#4565ff 0 25%,#0000 0 50%) 0 0/calc(2*100px) calc(2*100px),
-      radial-gradient(#0000 66%,#93fde8 68% 70%,#0000 72%) 0 calc(100px/2)/100px 100px
-      #4565ff;
+  background: rgb(69, 101, 255);
+  background: linear-gradient(
+    166deg,
+    rgba(71,75,255,1) 35%,
+    #93fde8 60%
+  );
 }
 
-.section_contacts  h1 {
-  text-decoration:underline 3px rgb(0, 0, 0); 
+.section_contacts h1 {
+  text-decoration: underline 3px rgb(0, 0, 0);
   line-height: 4rem;
   height: 40%;
   color: #000;
@@ -427,29 +434,54 @@ html {
   grid-template-rows: 1fr;
   gap: 15px;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   height: 40%;
   width: 100%;
 }
 
 .social_links a {
   border-radius: 25px;
-  background-color: rgba(118, 255, 228, 0.747);
-  border: solid 2px rgb(90, 106, 189) ;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  min-width: 70px;
+  min-width: 40px;
   height: 100%;
   margin: auto;
-  transition: ease-in background-color 0.3s;
+  transition: ease-in background-color 0.3s, box-shadow ease-in 0.3s;
   overflow: hidden;
 }
 
-.social_links a:hover, .social_links a:active {
-  background-color: rgb(43, 235, 196);
-} 
+.social_links a:nth-child(1) {
+  background-color: rgb(255, 81, 69);
+  box-shadow: -4px 2px 3px 3px rgb(219, 68, 57);
+}
+.social_links a:nth-child(2) {
+  background-color: rgb(252, 255, 69);
+  box-shadow: 0px 0px 3px 3px rgb(196, 199, 52);
+}
+.social_links a:nth-child(3) {
+  background-color: rgb(106, 255, 69);
+  box-shadow: 4px 2px 3px 3px rgb(72, 185, 44);
+}
+
+.social_links a:nth-child(1):hover,
+.social_links a:nth-child(1):active {
+  background-color: rgb(43, 197, 235);
+  box-shadow: -4px 2px 3px 3px rgb(27, 140, 168);
+}
+
+.social_links a:nth-child(2):hover,
+.social_links a:nth-child(2):active {
+  background-color: rgb(43, 197, 235);
+  box-shadow: 0px 0px 3px 3px rgb(27, 140, 168);
+}
+
+.social_links a:nth-child(3):hover,
+.social_links a:nth-child(3):active {
+  background-color: rgb(43, 197, 235);
+  box-shadow: 4px 2px 3px 3px rgb(27, 140, 168);
+}
 
 footer {
   height: 5vh;
@@ -495,11 +527,10 @@ footer {
     font-size: 9rem;
   }
 
-  .section_contacts  h1 {
+  .section_contacts h1 {
     font-size: 1.7rem;
     line-height: 1.9rem;
   }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -543,6 +574,8 @@ footer {
     height: 30%;
     border: none;
     background-image: url(./assets/photos/landscape.jpg);
+    background-color: rgba(147, 253, 232, 0.664);
+    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -556,7 +589,7 @@ footer {
   .about_me_text p {
     font-size: medium;
   }
-  
+
   .skills li:last-child {
     font-size: 16px;
   }
@@ -572,7 +605,7 @@ footer {
     flex-direction: column;
   }
 
-  .section_contacts  h1 {
+  .section_contacts h1 {
     font-size: 1.5rem;
     line-height: 1.9rem;
   }
@@ -628,17 +661,30 @@ footer {
     font-size: 7.5rem;
   }
 
-  .section_contacts  h1 {
+  .section_contacts h1 {
     font-size: 0.8rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
+  }
+
+  .social_links {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .social_links a {
-    width: 50px;
-    height: 50%;
+    background-color: none;
+    border: none;
+    width: 75px;
+    height: 50px;
+    transition: width ease-in 500ms;
   }
-  
+
+  .social_links a:active,
+  .social_links a:hover {
+    width: 80%;
+  }
+
   footer {
-    height: 10vh;
+    height: 5vh;
   }
 }
