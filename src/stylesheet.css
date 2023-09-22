@@ -34,6 +34,16 @@ html {
   src: url(./assets/fonts/PublicPixel-eZPz6.ttf);
 }
 
+@font-face {
+  font-family: Marker;
+  src: url(./assets/fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: Arvo;
+  src: url(./assets/fonts/Arvo-Regular.ttf);
+}
+
 .header-container {
   display: flex;
   height: 10vh;
@@ -143,31 +153,45 @@ html {
 }
 
 .introduction {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90%;
   height: 70%;
-  box-shadow: 6px -1px 5px 2px rgb(112, 122, 131), 6px -1px 5px 3px rgb(133, 134, 139), 6px -1px 15px 5px rgb(148, 150, 151);
+  box-shadow: 6px -1px 5px 2px rgb(112, 122, 131),
+    6px -1px 5px 3px rgb(133, 134, 139), 6px -1px 15px 5px rgb(148, 150, 151);
   border-radius: 3px;
   background: rgb(69, 101, 255);
   background: linear-gradient(
-  154.3deg,
-  rgba(69, 101, 255, 1) 40%,
-  rgba(147, 253, 232, 1) 70%
-);
+    154.3deg,
+    rgba(89, 117, 255, 0.904) 40%,
+    rgb(161, 255, 236, 0.904) 70%
+  );  
+  animation: 1s ease-in-out infinite alternate slideUp;
+}
+
+@keyframes slideUp {
+  from{
+    transform: translateY(-10px) skew(-8deg);
+  }
+
+  to {
+    transform: translateY(10px) skew(-8deg);
+  }
 }
 
 .introduction h1 {
   color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-stroke: #000 1px;
+  font-family: Marker, Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: #000 0.7px;
   font-size: 3rem;
   text-align: center;
 }
 
 .hero-section {
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   background: linear-gradient(
@@ -244,6 +268,39 @@ html {
   animation: wordSlider 5s ease-out infinite alternate;
 }
 
+.word {
+  display: block;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+.word:nth-child(2) {
+  font-family: Marker;  
+}
+
+.word:nth-child(3) {
+  font-family: Pixel;
+  font-size: 2rem;
+}
+
+.word:nth-child(4) {
+  font-family: Arvo;  
+}
+
+@keyframes wordSlider {
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+  75% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-75%);
+  }
+}
 .skills {
   width: 100%;
   min-width: 324px;
@@ -254,11 +311,7 @@ html {
   text-decoration: underline;
 }
 
-.word {
-  display: block;
-  line-height: 1.3em;
-  text-align: left;
-}
+
 
 .skills ul {
   display: grid;
@@ -284,20 +337,6 @@ html {
   color: black;
 }
 
-@keyframes wordSlider {
-  25% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-25%);
-  }
-  75% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(-75%);
-  }
-}
 
 .section_description svg {
   position: absolute;
@@ -388,20 +427,34 @@ html {
 
 .projects a {
   flex: 1;
-  transition: flex 0.3s ease;
+  transition: flex 0.3s ease-in 100ms, font-size 0.2s ease-in;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  font-family: Pixel, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.projects a:first-child, .projects a:last-child {
+.projects a:first-child,
+.projects a:last-child {
   background-color: #000;
+  color: aliceblue;  
 }
 
 .projects a:nth-child(2) {
   background-color: aliceblue;
+  color: #000;
 }
 
 .projects a:hover {
   flex: 10;
+}
+
+.projects:hover a:not(:hover) {
+  font-size: medium;
+  line-height: 1.4rem;
 }
 
 .section_contacts {
@@ -423,6 +476,7 @@ html {
   line-height: 4rem;
   height: 40%;
   color: #000;
+  margin: 1rem 2rem;
 }
 
 .social_links-container {
@@ -453,6 +507,7 @@ html {
   margin: auto;
   transition: ease-in background-color 0.3s, box-shadow ease-in 0.3s;
   overflow: hidden;
+  animation: 700ms ease-in-out infinite alternate BobUp;
 }
 
 .social_links a:nth-child(1) {
@@ -462,28 +517,42 @@ html {
 .social_links a:nth-child(2) {
   background-color: rgb(252, 255, 69);
   box-shadow: 0px 0px 3px 3px rgb(196, 199, 52);
+  animation-delay: 150ms;
 }
 .social_links a:nth-child(3) {
   background-color: rgb(106, 255, 69);
   box-shadow: 4px 2px 3px 3px rgb(72, 185, 44);
+  animation-delay: 300ms;
 }
 
 .social_links a:nth-child(1):hover,
 .social_links a:nth-child(1):active {
   background-color: rgb(43, 197, 235);
   box-shadow: -4px 2px 3px 3px rgb(27, 140, 168);
+  animation-play-state: paused;
 }
 
 .social_links a:nth-child(2):hover,
 .social_links a:nth-child(2):active {
   background-color: rgb(43, 197, 235);
   box-shadow: 0px 0px 3px 3px rgb(27, 140, 168);
+  animation-play-state: paused;
 }
 
 .social_links a:nth-child(3):hover,
 .social_links a:nth-child(3):active {
   background-color: rgb(43, 197, 235);
   box-shadow: 4px 2px 3px 3px rgb(27, 140, 168);
+  animation-play-state: paused;
+}
+
+@keyframes BobUp {
+  from {
+    transform: translateY(12px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
 }
 
 footer {
@@ -492,7 +561,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(147,253,232);
+  background: rgba(147, 253, 232);
   border-top: #000 1px solid;
   color: black;
 }
@@ -516,6 +585,18 @@ footer {
     display: flex;
     font-size: 2.4rem;
     text-align: center;
+  }
+  
+  .word:nth-child(2) {
+    font-size: 1.9rem;  
+  }
+  
+  .word:nth-child(3) {
+    font-size: 1.5rem;
+  }
+  
+  .word:nth-child(4) {
+    font-size: 2rem;  
   }
 
   .skills ul {
@@ -578,7 +659,8 @@ footer {
     height: 30%;
     border: none;
     background-image: url(./assets/photos/landscape.jpg);
-    background-color: rgba(147, 253, 232, 0.664);
+    background-color: rgba(192, 252, 240, 0.781);
+    background-blend-mode: multiply;
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
@@ -592,6 +674,18 @@ footer {
 
   .about_me_text p {
     font-size: medium;
+  }
+
+  .word:nth-child(2) {
+    font-size: 1.3rem;  
+  }
+  
+  .word:nth-child(3) {
+    font-size: 1.1rem;
+  }
+  
+  .word:nth-child(4) {
+    font-size: 1.5rem;  
   }
 
   .skills li:last-child {
@@ -616,6 +710,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
   .name {
     font-size: 0.75rem;
     min-width: 237px;
@@ -644,6 +739,18 @@ footer {
       rgba(69, 101, 255, 1) 98%,
       rgba(147, 253, 232, 1) 100%
     );
+  }  
+
+  .word:nth-child(2) {
+    font-size: 1.3rem;  
+  }
+  
+  .word:nth-child(3) {
+    font-size: 0.9rem;
+  }
+  
+  .word:nth-child(4) {
+    font-size: 1.5rem;  
   }
 
   .skills {
@@ -680,7 +787,9 @@ footer {
     border: none;
     width: 75px;
     height: 50px;
-    transition: width ease-in 500ms,background-color 0.3s ease-in, box-shadow 0.3s ease-in;
+    transition: width ease-in 500ms, background-color 0.3s ease-in,
+      box-shadow 0.3s ease-in;
+    animation: none;
   }
 
   .social_links a:nth-child(1) {
