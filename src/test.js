@@ -1,23 +1,26 @@
+function scrollTo() {
 
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  const links = document.querySelectorAll('a[href^="#"]');
+
+
+  links.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+
+
+      const targetId = this.getAttribute('href').substring(1);
+
+
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+
+        window.scrollTo({
+          top: targetSection.offsetTop
+        });
+      }
+    });
+  });
 }
 
-
-function startAnimationWhenVisible() {
-  const picture = document.querySelector('.my-photo');
-  const text = document.querySelector('.about_me')
-
-  if (isElementInViewport(picture)) {
-    picture.style.animationPlayState = 'running';
-    text.style.animationPlayState = 'running'      
-  }
-}
-
-export default startAnimationWhenVisible
+export default {scrollTo}
