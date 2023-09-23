@@ -236,12 +236,40 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: slideRight 300ms 1 ease-in;
+  animation-play-state: paused;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .about_me {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: slideLeft 600ms 1 ease-in;
+  animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .about_me_title {
@@ -404,6 +432,17 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  animation: Pulsating infinite 1s ease-in alternate;
+}
+
+@keyframes Pulsating {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .projects_container_page {
