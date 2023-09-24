@@ -1,6 +1,24 @@
 import "./stylesheet.css";
 import scrollTo from "./test";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const sectionsLinks = document.querySelector(".sections-links");
+  const links = sectionsLinks.querySelectorAll("a");
+
+  menuToggle.addEventListener("click", function () {
+      sectionsLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+  });
+
+  links.forEach(function (link) {
+      link.addEventListener("click", function () {
+          sectionsLinks.classList.remove("active");
+          menuToggle.classList.remove("active");
+      });
+  });
+});
+
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
   return (

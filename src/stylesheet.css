@@ -62,10 +62,10 @@ a {
 }
 
 .nav-page-container {
-  min-width: 250px;
+  min-width: 300px;
   width: 5%;
-  font-size: 0.7rem;
-  font-family: Pixel, Arial, Helvetica, sans-serif;  
+  font-size: 0.9rem;
+  font-family: Pixel, Arial, Helvetica, sans-serif;
 }
 
 .name-container {
@@ -173,12 +173,12 @@ a {
     154.3deg,
     rgba(89, 117, 255, 0.904) 40%,
     rgb(161, 255, 236, 0.904) 70%
-  );  
+  );
   animation: 1s ease-in-out infinite alternate slideUp;
 }
 
 @keyframes slideUp {
-  from{
+  from {
     transform: translateY(-10px) skew(-8deg);
   }
 
@@ -308,7 +308,7 @@ a {
 }
 
 .word:nth-child(2) {
-  font-family: Marker;  
+  font-family: Marker;
 }
 
 .word:nth-child(3) {
@@ -317,7 +317,7 @@ a {
 }
 
 .word:nth-child(4) {
-  font-family: Arvo;  
+  font-family: Arvo;
 }
 
 @keyframes wordSlider {
@@ -344,8 +344,6 @@ a {
   text-decoration: underline;
 }
 
-
-
 .skills ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -369,7 +367,6 @@ a {
   background-color: rgb(34, 211, 255);
   color: black;
 }
-
 
 .section_description svg {
   position: absolute;
@@ -483,13 +480,14 @@ a {
   align-items: center;
   text-align: center;
   font-size: xx-large;
-  font-family: Pixel, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Pixel, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .projects a:first-child,
 .projects a:last-child {
   background-color: #000;
-  color: aliceblue;  
+  color: aliceblue;
 }
 
 .projects a:nth-child(2) {
@@ -635,17 +633,17 @@ footer {
     font-size: 2.4rem;
     text-align: center;
   }
-  
+
   .word:nth-child(2) {
-    font-size: 1.9rem;  
+    font-size: 1.9rem;
   }
-  
+
   .word:nth-child(3) {
     font-size: 1.5rem;
   }
-  
+
   .word:nth-child(4) {
-    font-size: 2rem;  
+    font-size: 2rem;
   }
 
   .skills ul {
@@ -672,9 +670,63 @@ footer {
     font-size: 1rem;
   }
 
-  .nav-links-container,
-  .nav-page-container {
+  .nav-links-container {
     display: none;
+  }
+
+  .nav-page-container {
+    position: absolute;
+  }
+
+  .sections-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: rgb(138, 230, 211);
+    border: solid 1px #1ba77d;
+    width: 35%;
+    height: 50px;
+    z-index: 1;
+    font-size: 0.6rem;
+  }
+
+  .sections-links a:hover::before {
+    width: 0%;
+  }
+
+  .sections-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .menu-toggle span {
+    background-color: #000000;
+    display: block;
+    height: 2px;
+    width: 25px;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 
   .header-container {
@@ -700,7 +752,7 @@ footer {
     width: 100%;
     height: 60%;
     border-radius: 0%;
-    border: none;    
+    border: none;
     animation: none;
   }
 
@@ -728,15 +780,15 @@ footer {
   }
 
   .word:nth-child(2) {
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
   }
-  
+
   .word:nth-child(3) {
     font-size: 1.1rem;
   }
-  
+
   .word:nth-child(4) {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
   }
 
   .skills li:last-child {
@@ -761,7 +813,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
   .name {
     font-size: 0.75rem;
     min-width: 237px;
@@ -790,18 +841,18 @@ footer {
       rgba(69, 101, 255, 1) 98%,
       rgba(147, 253, 232, 1) 100%
     );
-  }  
+  }
 
   .word:nth-child(2) {
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
   }
-  
+
   .word:nth-child(3) {
     font-size: 0.9rem;
   }
-  
+
   .word:nth-child(4) {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
   }
 
   .skills {
