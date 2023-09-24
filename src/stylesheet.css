@@ -608,6 +608,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: rgba(147, 253, 232);
   border-top: #000 1px solid;
   color: black;

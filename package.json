@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,10 @@
   "bugs": {
     "url": "https://github.com/Negrea-Andrei/Personal_portfolio/issues"
   },
-  "homepage": "https://github.com/Negrea-Andrei/Personal_portfolio#readme",
+  "homepage": "https://negrea-andrei.github.io/Personal_portfolio",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
