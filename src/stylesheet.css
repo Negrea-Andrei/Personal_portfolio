@@ -815,9 +815,15 @@ footer {
   }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (min-height: 300px) {
+  .introduction h1 {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
   .description-container {
-    height: 120vh;
+    height: 150vh;
   }
 
   .about_me_text p {
