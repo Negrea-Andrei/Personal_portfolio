@@ -666,6 +666,7 @@ footer {
   }
 }
 
+
 @media screen and (max-width: 900px) {
   .name {
     font-size: 1rem;
@@ -810,6 +811,20 @@ footer {
   .section_contacts h1 {
     font-size: 1.5rem;
     line-height: 1.9rem;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .description-container {
+    height: 200vh;
+  }
+
+  .projects_container_title h1 {
+    font-size: 6rem;
+  }
+
+  .social_links-container h1 {
+    font-size: small;
   }
 }
 
