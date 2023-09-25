@@ -357,9 +357,10 @@ a {
 .skills ul li {
   display: flex;
   justify-content: center;
-  background-color: rgb(82, 110, 255);
+  background-color: rgb(113, 137, 255);
   border-radius: 25px;
   transition: ease-in 0.5s background-color, ease-in 0.3s color;
+  color: #000;
 }
 
 .skills li:hover,
@@ -814,9 +815,13 @@ footer {
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 450px) {
   .description-container {
-    height: 200vh;
+    height: 120vh;
+  }
+
+  .about_me_text p {
+    font-size: medium;
   }
 
   .projects_container_title h1 {
