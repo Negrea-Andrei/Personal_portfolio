@@ -815,29 +815,6 @@ footer {
   }
 }
 
-@media screen and (min-height: 300px) {
-  .introduction h1 {
-    display: flex;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-  .description-container {
-    height: 150vh;
-  }
-
-  .about_me_text p {
-    font-size: medium;
-  }
-
-  .projects_container_title h1 {
-    font-size: 6rem;
-  }
-
-  .social_links-container h1 {
-    font-size: small;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .name {
@@ -858,8 +835,12 @@ footer {
     font-size: 0.7rem;
   }
 
+  .description-container {
+    height: 100vh;
+  }
+
   .about_me_text p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .section_projects {
@@ -947,5 +928,23 @@ footer {
 
   footer {
     height: 3vh;
+  }
+}
+
+@media screen and (max-height: 300px) and (max-width: 900px) {
+.description-container {
+  height: 160vh;
+}
+
+  .about_me_text p {
+    font-size: medium;
+  }
+
+  .projects_container_title h1 {
+    font-size: 6rem;
+  }
+
+  .social_links-container h1 {
+    font-size: small;
   }
 }
