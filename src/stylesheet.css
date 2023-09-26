@@ -654,7 +654,9 @@ footer {
 
   .skills li:last-child {
     font-size: 0.9rem;
-  }
+  }  
+
+  
 
   .projects_container_title h1 {
     width: 100%;
@@ -668,13 +670,17 @@ footer {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 915px) {
   .name {
     font-size: 1rem;
   }
 
   .nav-links-container {
     display: none;
+  }
+
+  .description-container {
+    height: 130vh;
   }
 
   .nav-page-container {
@@ -836,7 +842,7 @@ footer {
   }
 
   .description-container {
-    height: 100vh;
+    height: 130vh;
   }
 
   .about_me_text p {
