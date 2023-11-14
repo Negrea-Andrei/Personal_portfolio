@@ -38,7 +38,7 @@ Welcome to my personal portfolio repository! This portfolio showcases my skills,
 
 - **Description**: A web application built using Next.js, React, and the PokeAPI. It offers a fun and interactive way for users to test their memory by matching Pokemon images in a grid.
 - **Features**:
-  - Classic memory matching game with Pokemon images.
+  - Classic memory game with Pokemon images.
   - Random Pokemon selection for each game.
   - Real-time score tracking.
   - Responsive design for seamless gameplay on various devices.
@@ -48,11 +48,10 @@ Welcome to my personal portfolio repository! This portfolio showcases my skills,
 ## Skills
 
 - **Frontend Development**: HTML, CSS, JavaScript, React.js
-- **Backend Development**: [Remove specific backend mention.]
-- **Database**: SQL [Add any additional databases you're proficient in.]
+- **Database**: SQL
 - **APIs**: RESTful API integration
 - **Version Control**: Git, GitHub
-- **Other Tools**: Jira, Jenkins [Add any additional tools or technologies you're proficient in.]
+- **Other Tools**: Jira, Jenkins
 
 ## Contact
 
@@ -69,6 +68,6 @@ Feel free to reach out to me! You can contact me via email at [negrea97@yahoo.co
 - **Jira**: Project management and issue tracking tool.
 - **Jenkins**: Automation server for building, testing, and deploying software.
 - **SQL**: Relational database for storing and retrieving structured data.
-- [Add any other technologies you want to highlight.]
+
 
 Feel free to explore my projects and learn more about my skills and experiences! If you have questions or collaboration opportunities, don't hesitate to reach out.
