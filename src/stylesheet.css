@@ -840,7 +840,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  .skills li:last-child {
+  .skills li:nth-child(9) {
     font-size: 16px;
   }
 
