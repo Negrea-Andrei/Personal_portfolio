@@ -919,7 +919,7 @@ footer {
     column-gap: 7px;
   }
 
-  .skills li:last-child {
+  .skills li:nth-child(9) {
     font-size: 10px;
   }
 
